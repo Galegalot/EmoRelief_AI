@@ -1,0 +1,34 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+SmokeScreenshots/
+.vs/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+sysinfo.txt
+
+# The ready-to-play Windows build IS committed; only Unity's debug symbols are skipped.
+[Bb]uilds/**/*_BurstDebugInformation_DoNotShip/
+
+# Secrets: the ThaiLLM API key lives in PathummaLLM/.env (copy .env.example)
+.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+
+# Local-only material
+Model ref/
+tools/cache/
+fast_build_tmp.rsp
+*.log

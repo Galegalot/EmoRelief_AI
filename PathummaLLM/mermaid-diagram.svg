@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1339.5439999999999 637.45" width="1339.5439999999999" height="637.45" style="--bg:#18181B;--fg:#F4F4F5;--line:#71717A;--muted:#A1A1AA;--surface:#27272A;--border:#3F3F46;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="seq-arrow" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto-start-reverse">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" />
+  </marker>
+  <marker id="seq-arrow-open" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto-start-reverse">
+    <polyline points="0 0, 8 2.5, 0 5" fill="none" stroke="var(--_arrow)" stroke-width="1" />
+  </marker>
+</defs>
+<line class="lifeline" data-actor="Player" x1="131.84899999999993" y1="92.45" x2="131.84899999999993" y2="607.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="Unity" x1="476.875" y1="70" x2="476.875" y2="607.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="PyServer" x1="821.0129999999999" y1="70" x2="821.0129999999999" y2="607.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="ThaiLLM" x1="1096.541" y1="70" x2="1096.541" y2="607.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<g class="message" data-from="Unity" data-to="Unity" data-label="CombatTelemetryTracker เก็บสถิติ (CPS, เวลา, อาวุธ)" data-line-style="solid" data-arrow-head="filled" data-self="true" data-step="1">
+  <polyline points="476.875,112.45 506.875,112.45 506.875,132.45 476.875,132.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="511.875" y="114.3" width="304" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="514.875" y="122.45" font-size="11" text-anchor="start" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">CombatTelemetryTracker เก็บสถิติ (CPS, เวลา, อาวุธ)</text>
+  <circle class="sequence-number" cx="476.875" cy="112.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="476.875" y="112.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">1</text>
+</g>
+<g class="message" data-from="Player" data-to="Unity" data-label="คลิกปุ่ม &quot;FINISH&quot;" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="2">
+  <line x1="131.84899999999993" y1="182.45" x2="476.875" y2="182.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="251.36199999999997" y="164.29999999999998" width="106" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="304.36199999999997" y="172.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">คลิกปุ่ม &quot;FINISH&quot;</text>
+  <circle class="sequence-number" cx="131.84899999999993" cy="182.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="131.84899999999993" y="182.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">2</text>
+</g>
+<g class="message" data-from="Unity" data-to="Unity" data-label="แสดงหน้า Loading (&quot;กำลังประเมิน EMO Tips...&quot;)" data-line-style="solid" data-arrow-head="filled" data-self="true" data-step="3">
+  <polyline points="476.875,222.45 506.875,222.45 506.875,242.45 476.875,242.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="511.875" y="224.29999999999998" width="260" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="514.875" y="232.45" font-size="11" text-anchor="start" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">แสดงหน้า Loading (&quot;กำลังประเมิน EMO Tips...&quot;)</text>
+  <circle class="sequence-number" cx="476.875" cy="222.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="476.875" y="222.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">3</text>
+</g>
+<g class="message" data-from="Unity" data-to="PyServer" data-label="HTTP POST /analyze (ส่ง JSON สถิติ 7 ตัว)" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="4">
+  <line x1="476.875" y1="292.45" x2="821.0129999999999" y2="292.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="525.944" y="274.3" width="246" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="648.944" y="282.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">HTTP POST /analyze (ส่ง JSON สถิติ 7 ตัว)</text>
+  <circle class="sequence-number" cx="476.875" cy="292.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="476.875" y="292.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">4</text>
+</g>
+<g class="message" data-from="PyServer" data-to="ThaiLLM" data-label="HTTP POST /chat/completions (Model: pathumma)" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="5">
+  <line x1="821.0129999999999" y1="347.45" x2="1096.541" y2="347.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="828.2769999999999" y="329.3" width="261" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="958.7769999999999" y="337.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">HTTP POST /chat/completions (Model: pathumma)</text>
+  <circle class="sequence-number" cx="821.0129999999999" cy="347.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="821.0129999999999" y="347.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">5</text>
+</g>
+<g class="message" data-from="ThaiLLM" data-to="PyServer" data-label="ส่งผลลัพธ์กลับมา (Raw Text พร้อมแท็ก think)" data-line-style="dashed" data-arrow-head="filled" data-self="false" data-step="6">
+  <line x1="1096.541" y1="402.45" x2="821.0129999999999" y2="402.45" stroke="var(--_line)" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#seq-arrow)" />
+  <rect x="830.2769999999999" y="384.3" width="257" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="958.7769999999999" y="392.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">ส่งผลลัพธ์กลับมา (Raw Text พร้อมแท็ก think)</text>
+  <circle class="sequence-number" cx="1096.541" cy="402.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="1096.541" y="402.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">6</text>
+</g>
+<g class="message" data-from="PyServer" data-to="Unity" data-label="ส่ง Clean JSON (HTTP 200 OK)" data-line-style="dashed" data-arrow-head="filled" data-self="false" data-step="7">
+  <line x1="821.0129999999999" y1="457.45" x2="476.875" y2="457.45" stroke="var(--_line)" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#seq-arrow)" />
+  <rect x="562.944" y="439.3" width="172" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="648.944" y="447.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">ส่ง Clean JSON (HTTP 200 OK)</text>
+  <circle class="sequence-number" cx="821.0129999999999" cy="457.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="821.0129999999999" y="457.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">7</text>
+</g>
+<g class="message" data-from="Unity" data-to="Unity" data-label="ซ่อนหน้า Loading" data-line-style="solid" data-arrow-head="filled" data-self="true" data-step="8">
+  <polyline points="476.875,497.45 506.875,497.45 506.875,517.45 476.875,517.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="511.875" y="499.3" width="106" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="514.875" y="507.45" font-size="11" text-anchor="start" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">ซ่อนหน้า Loading</text>
+  <circle class="sequence-number" cx="476.875" cy="497.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="476.875" y="497.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">8</text>
+</g>
+<g class="message" data-from="Unity" data-to="Player" data-label="แสดงหน้าจอจบเกม ขยายส่วน EMO Tips ใหญ่พิเศษ
+(คะแนนโกรธ + คำปลอบใจ + 3 วิธีฮีล + 3 ที่เที่ยวเชียงใหม่)" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="9">
+  <line x1="476.875" y1="567.45" x2="131.84899999999993" y2="567.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="135.36199999999997" y="542.1500000000001" width="338" height="30.6" rx="2" ry="2" fill="var(--bg)" />
+  <text x="304.36199999999997" y="557.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)"><tspan x="304.36199999999997" dy="-3.3000000000000007">แสดงหน้าจอจบเกม ขยายส่วน EMO Tips ใหญ่พิเศษ</tspan><tspan x="304.36199999999997" dy="14.3">(คะแนนโกรธ + คำปลอบใจ + 3 วิธีฮีล + 3 ที่เที่ยวเชียงใหม่)</tspan></text>
+  <circle class="sequence-number" cx="476.875" cy="567.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="476.875" y="567.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">9</text>
+</g>
+<g class="note" data-position="over" data-actors="PyServer">
+  <polygon points="707.8019999999999,300.45 928.2239999999999,300.45 934.2239999999999,306.45 934.2239999999999,323.45 707.8019999999999,323.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="928.2239999999999,300.45 934.2239999999999,306.45 928.2239999999999,306.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="821.0129999999999" y="311.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">รวมสถิติเข้ากับ Prompt จิตวิทยา 7 ข้อ</text>
+</g>
+<g class="note" data-position="over" data-actors="ThaiLLM">
+  <polygon points="883.538,355.45 1303.544,355.45 1309.544,361.45 1309.544,378.45 883.538,378.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="1303.544,355.45 1309.544,361.45 1303.544,361.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1096.541" y="366.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)"><tspan x="1096.541" dy="-3.3000000000000007">Pathumma ประมวลผลความคิดใน &lt;think&gt;</tspan><tspan x="1096.541" dy="14.3">และสร้าง JSON แนะนำอารมณ์ + เชียงใหม่</tspan></text>
+</g>
+<g class="note" data-position="over" data-actors="PyServer">
+  <polygon points="701.268,410.45 934.758,410.45 940.758,416.45 940.758,433.45 701.268,433.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="934.758,410.45 940.758,416.45 934.758,416.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="821.013" y="421.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">ตัดแท็ก think ออก + Clean JSON ให้ปลอดภัย</text>
+</g>
+<g class="actor" data-id="Player" data-label="ผู้เล่น (Player)" data-type="actor">
+  <g transform="translate(113.84899999999993,32) scale(1.5)">
+    <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="none" stroke="var(--_line)" stroke-width="0.6666666666666666" />
+    <path d="M15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10Z" fill="none" stroke="var(--_line)" stroke-width="0.6666666666666666" />
+    <path d="M5.62842 18.3563C7.08963 17.0398 9.39997 16 12 16C14.6 16 16.9104 17.0398 18.3716 18.3563" fill="none" stroke="var(--_line)" stroke-width="0.6666666666666666" />
+  </g>
+  <text x="131.84899999999993" y="84" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">ผู้เล่น (Player)</text>
+</g>
+<g class="actor" data-id="Unity" data-label="Unity Game (C#)" data-type="participant">
+  <rect x="414.699" y="30" width="124.35199999999999" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="476.875" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Unity Game (C#)</text>
+</g>
+<g class="actor" data-id="PyServer" data-label="Python Backend (server.py)" data-type="participant">
+  <rect x="721.0459999999999" y="30" width="199.93399999999997" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="821.0129999999999" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Python Backend (server.py)</text>
+</g>
+<g class="actor" data-id="ThaiLLM" data-label="ThaiLLM Cloud API (Pathumma)" data-type="participant">
+  <rect x="987.682" y="30" width="217.71799999999996" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1096.541" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">ThaiLLM Cloud API (Pathumma)</text>
+</g>
+</svg>
